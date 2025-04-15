@@ -1,0 +1,114 @@
+//Initializatio
+AOS.init();
+
+// DOM Selection
+const toggleNavBtn = document.getElementById("hamburger"),
+    mobileNav = document.querySelector(".myMobile-navbar");
+
+const navlinks = document.querySelectorAll(".myMobile-navbar a");
+
+//event for Navbar toggling
+toggleNavBtn.addEventListener("click", () => {
+    toggleNavBtn.classList.toggle("is-active");
+    if (toggleNavBtn.classList.contains("is-active")) {
+        mobileNav.style.left = "0";
+        document.body.style.position = "fixed";
+        document.body.style.overflowY = "hidden";
+    } else {
+        mobileNav.style.left = "100vw";
+        document.body.style.position = "unset";
+        document.body.style.overflowY = "unset";
+    }
+});
+
+const closeNav = () => {
+    mobileNav.style.left = "100vw";
+    document.body.style.position = "unset";
+    document.body.style.overflowY = "unset";
+};
+
+navlinks.forEach((navlink) => {
+    navlink.addEventListener("click", closeNav);
+});
+
+//End of the event for Navbar toggling
+
+//function for scroll to top
+//Get the button:
+const scrollBtn = document.getElementById("scrollToTop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+    ) {
+        scrollBtn.style.display = "flex";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+}
+//click event
+scrollBtn.addEventListener("click", topFunction);
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+const subsidiary = document.querySelector(".oursub");
+const dropdown = document.querySelector(".dropdown");
+const arrowIcon = document.querySelector(".ri-arrow-down-s-line");
+
+subsidiary.addEventListener("click", function (event) {
+    dropdown.classList.toggle("show");
+
+    // Prevent the body click event from triggering immediately
+    event.stopPropagation();
+});
+
+document.addEventListener("click", function (event) {
+    if (
+        !dropdown.contains(event.target) &&
+        !subsidiary.contains(event.target)
+    ) {
+        dropdown.classList.remove("show");
+    }
+});
+
+// mobile
+const mobileSubsidiary = document.querySelector(".mobile-sub");
+const mobileDropdown = document.querySelector(".mobile-dropdown");
+
+mobileSubsidiary.addEventListener("click", function (event) {
+    mobileDropdown.classList.toggle("mobile-show");
+});
+
+// image gallery
+
+$(document).ready(function () {
+    $(".imageGallery").owlCarousel({
+        loop: true,
+        items: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3,
+            },
+            1000: {
+                items: 5,
+            },
+        },
+    });
+});

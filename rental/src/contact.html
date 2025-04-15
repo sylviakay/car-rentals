@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | ViaRide</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-cyan-950 text-white py-8 text-center">
+      <h1 class="text-4xl font-bold mb-2">Contact Us</h1>
+      <p class="text-lg">We're here to help you with any inquiries</p>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="flex-col items-center justify-center p-16">
+      <!-- Contact Form -->
+      <main class="border-4 p-20 border-cyan-800">
+        <h2 class="text-2xl font-semibold text-cyan-800 pb-5">
+          Send Us a Message
+        </h2>
+        <form class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="mt-1 block w-full border border-black rounded-md shadow-sm p-3 focus:ring-cyan-700 focus:border-cyan-700"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="mt-1 block w-full border border-black rounded-md shadow-sm p-3 focus:ring-cyan-700 focus:border-cyan-700"
+            />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class="mt-1 block w-full border border-black rounded-md shadow-sm p-3 focus:ring-cyan-700 focus:border-cyan-700"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-cyan-800 text-white py-3 px-6 rounded-md hover:bg-cyan-900 transition duration-200"
+          >
+            Send Message
+          </button>
+        </form>
+      </main>
+
+      <!-- Contact Information -->
+      <main class="flex flex-col items-center justify-center pt-16">
+        <h2 class="text-2xl font-semibold text-cyan-800 mb-4">Get in Touch</h2>
+        <div
+          class="flex items-center justify-center space-y-6 text-gray-700 gap-24"
+        >
+          <div>
+            <p class="font-medium">Customer Support</p>
+            <p>
+              Email:
+              <a
+                href="mailto:support@viaride.com"
+                class="text-cyan-700 underline"
+                >support@viaride.com</a
+              >
+            </p>
+            <p>
+              Phone:
+              <a href="tel:+2348000000000" class="text-cyan-700 underline"
+                >+234 800 000 0000</a
+              >
+            </p>
+          </div>
+          <div>
+            <p class="font-medium">Office Address</p>
+            <p>ViaRide HQ</p>
+            <p>123 Mobility Lane, Lagos, Nigeria</p>
+          </div>
+          <div>
+            <p class="font-medium">Working Hours</p>
+            <p>Mon - Fri: 9:00am – 6:00pm</p>
+            <p>Sat: 10:00am – 4:00pm</p>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cyan-950 text-white py-8 text-center">
+      <p class="text-sm">&copy; 2025 ViaRide. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

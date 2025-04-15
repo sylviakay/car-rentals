@@ -1,0 +1,32 @@
+$(".heroCarousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  dots: false,
+  nav: true,
+  navText: [
+    `<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" d="M15 19V5l-8 7z"/>
+            </svg>`,
+    `<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" d="m9 19l8-7l-8-7z"/>
+            </svg>`,
+  ],
+  mouseDrag: false,
+  autoplay: true,
+  autoplayTimeout: 8000,
+  animateOut: "slideOutUp",
+  responsive: {
+    0: {
+      items: 1,
+    },
+    2000: {
+      items: 1,
+    },
+    4000: {
+      items: 1,
+    },
+    6000: {
+      items: 1,
+    },
+  },
+});

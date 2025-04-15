@@ -1,0 +1,18 @@
+.elementor-kit-4{--e-global-color-primary:#6EC1E4;--e-global-color-secondary:#54595F;--e-global-color-text:#7A7A7A;--e-global-color-accent:#61CE70;--e-global-color-7741869:#E1B48E;--e-global-color-8f9c531:#6ECEEB;--e-global-color-1d2b770:#269CBD;--e-global-color-2a47531:#53676F;--e-global-color-ee13f7b:#B7B7B7;--e-global-color-1dc6c31:#FFFFFF;--e-global-color-6d4e8c3:#202020;--e-global-color-0f1df97:#F9F9F9;--e-global-color-aea2064:#F4F4F4;--e-global-typography-primary-font-family:"Montserrat";--e-global-typography-primary-font-weight:700;--e-global-typography-primary-text-transform:uppercase;--e-global-typography-secondary-font-family:"Montserrat";--e-global-typography-secondary-font-weight:700;--e-global-typography-secondary-text-transform:uppercase;--e-global-typography-text-font-family:"Montserrat";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Montserrat";--e-global-typography-accent-font-weight:500;font-family:"Montserrat", Sans-serif;}.elementor-kit-4 e-page-transition{background-color:#FFBC7D;}.elementor-kit-4 a{color:#D39C70;font-family:"Montserrat", Sans-serif;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.e-con{--container-max-width:1140px;}.elementor-widget:not(:last-child){margin-block-end:20px;}.elementor-element{--widgets-spacing:20px 20px;--widgets-spacing-row:20px;--widgets-spacing-column:20px;}{}h1.entry-title{display:var(--page-title-display);}@media(max-width:1345px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}/* Start custom CSS *//* Header : Slide In From The Top */
+.header-2 {
+ transform: translatey(-120px);
+ -moz-transition: all .3s ease!important;
+ -webkit-transition: all .3s ease!important;
+ transition: all .3s ease!important;
+}
+.elementor-sticky--effects.header-2  {
+ height: auto!important;
+ transform: translatey(0px);
+}
+.elementor-sticky--effects.header-1 {
+ display: none!important;
+}
+
+#equal-height-article, #equal-height-article div,#equal-height-article h4{
+    height: 100%
+}/* End custom CSS */

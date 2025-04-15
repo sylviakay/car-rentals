@@ -1,0 +1,57 @@
+//testimonial carousel
+$(".testimonialCarousel").owlCarousel({
+  loop: true,
+  margin: 20,
+  dots: false,
+  nav: true,
+  navText: [
+    `<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" d="M15 19V5l-8 7z"/>
+            </svg>`,
+    `<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" d="m9 19l8-7l-8-7z"/>
+            </svg>`,
+  ],
+  autoplay: true,
+  autoplayTimeout: 5000,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 2,
+    },
+  },
+});
+
+//courses carousel
+$(".coursesCarousel").owlCarousel({
+  loop: true,
+  margin: 30,
+  dots: false,
+  nav: true,
+  navText: [
+    `<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" d="M15 19V5l-8 7z"/>
+            </svg>`,
+    `<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" d="m9 19l8-7l-8-7z"/>
+            </svg>`,
+  ],
+  autoplay: true,
+  autoplayTimeout: 5000,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
